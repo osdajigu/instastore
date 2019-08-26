@@ -1,44 +1,75 @@
-# InstaStore
-Technical test for back-end developers.
- - [Instructions for developers](#instructions-for-developers)
- - [Requirements](#requirements)
- - [Improvements and trade offs](#improvements-and-trade-offs)
+# Preguntas/Respuestas
+
+1. ¿Que información recibe el endpoint? (un grupo de coordenadas donde los tenderos estan, o solo información de un unico tendero, que empresa es, etc)? Recibe info de donde el cliente espera recibir el pedido, los datos de entrada son expectedDelivery: utcDate , representa la hora estimada de entrega de un pedido, 
+ destination": {
+"name": "string",
+"address": "string",
+"address_two": "string",
+"description": "string",
+"country": "string",
+"city": "string",
+"state": "string",
+"zip_code": "string",
+"latitude": 0,
+"longitude": 0
+}
+2. ¿El endpoint debe trabajar para diferentes empresas, o se hara solo para 1 empresa en especifico?, en caso de ser diferentes, como se puede identificar que empresa es (esta pregunta es un complemento de la pregunta numero 1). Seria para varias , propon una solución 
+3. ¿Como se define la tienda mas cercana? (Distancia, tiempo en llegar, etc) quiero dejartelo abierto para que propongas la mejor manera de acuerdo a las restricciones de tiempo que tienes y la informacion que captas en el endpoint.
+4. ¿De donde se obtiene la informacion de las tiendas que existen actualmente? ¿Deben ser inventadas por uno mismo o se debe usar informacion de alguna tienda en especifico, o google maps, etc? Arma la estructura que quieras puedes tomar como base las tiendas de Soriana en Monterrey y Ciudad de Mexico
+5. ¿Que es el campo nextDeliveryTime con exactitud y como se calcula? propon como se deberia calcular de acuerdo a la data que tienes , pero basicamente representa la siguiente hora disponible en que la tienda puede entregar un pedido
+6. ¿Que informacion se considera relevante para llevar un registro de las llamadas al endpoint? (hora, id_empresa, token, respuesta, etc).  cual crees tu que es relevante, haz de cuenta que estas hablando con alguien de negocio que lo unico que sabe es que tiene que medir
+7. ¿Que clase de coordenadas se manejan? (puntos en un plano, coordenadas esfericas, etc). cuales crees qiuhe serian mejores de acuerdo a la entrada del endpoint y al diseño que vas a plantear
+8. En que formato se debe retornar la informacion del endpoint (Json, xml, texto plano, etc) json
+9. Con respecto al atributo isOpen, en caso de que la tienda mas cercana se encuentre cerrada, se deberia buscar la tienda mas cercana que este abierta? o no importa e igual retornar la mas cercana asi este cerrada. pensando en un usuario final que quiere hacer sus compras de sueprmercado que crees que lo beneficiaria mas
+10. Qué forma/campos tiene una tienda? definelo de acuerdo a lo que tiu modelo necesite
+11. El Endpoint debe validar autorización de utilización? no, pero si lo puedes hacer seria genial
+
+# Estructura de la base de datos:
+store-bd
+{
+   {
+      id_company: Integer,
+      stores: [{
+         id_store: Integer,
+         name: String
+         address: String
+         latitude: Double,
+         longitude: Double,
+         city: String,
+         state: String,
+         country: String
+         time_open: Hour
+         time_close: Hour
+         time_till_available: Date
+      }]
+   }
+}
  
-## Instructions for developers
- 1. Fork this repo.
- 2. Create a new branch.
- 3. Understand the requirement and the user stories.
- 4. Ask any questions to david.camargo@instaleap.io. (you have 1 chance, make it worth)
- 4. As your first commit, copy your questions and David's answers, and design the "architecture" of your service. Upload a
-    sketch/photo/readme, etc explaining how your service is going to work, and when do you think you can deliver
-    the final product (we expect you to deliver it in less than 2 days).
- 5. Have fun coding this challenge. Take into account that the data provided could have inconsistencies, make sure to handle them.
- 6. If you find blockers, keep moving and get them solved later, please write them down in a markdown file inside your repo.
- 7. Answer the [Improvements and trade offs](#improvements-and-trade-offs) section.
- 7. Create a Pull Request (in your own fork), add 'davidcp90' as a reviewer, and send an email to david.camargo@instaleap.io
+track-bd
+{
+   time: Date
+   data: {
+      name: string,
+      address: string,
+      address_two: string,
+      description: string,
+      country: string,
+      city: string,
+      state": string,
+      zip_code: string,
+      latitude: 0,
+      longitude: 0
+   }
+   status: String
+   response: {
+      store_id: String
+      store_name: String
+      is_open: Boolean
+      latitude: Double
+      longitude: Double
+      next_delivery_time: Date
+   }
+}
 
-## Requirements
-InstaStore is a microservice in charge of selecting the closest "convenience" store to deliver a groceries order to our B2B clients.
-
-### Non-functional
-- We expect you to deliver idiomatic code in a way that is easy to read and follows the accepted guidelines in your area of expertise.
-- You should write it on Node.js with Express.js. Libraries, transpilers , etc are up to you.
-- Endpoints are fast (less than 300ms).
-- Endpoints respond error codes that makes sense to the case.
-- Please provide documentation for the endpoints you create.
-
-### Functional (user stories)
-1. Our B2B clients should be able to consume an endpoint that provides them the following information:
-  - storeId
-  - storeName
-  - isOpen
-  - coordinates
-  - nextDeliveryTime
-2. The endpoint returns the closest store available
-3. We need to keep track of each call to the endpoint
-
-## Improvements and trade offs
-1. What would you improve from your code? why?
-2. Which trade offs would you make to accomplish this on time? What'd you do next time to deliver more and sacrifice less?
-3. Do you think your service is secure? why?
-4. What would you do to measure the behaviour of your product on a production environment?
+# Entrega estimada
+La entrega estimada es para el Lunes 26 de agosto de 2019 a las 11:55 pm
