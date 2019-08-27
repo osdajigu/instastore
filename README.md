@@ -29,48 +29,84 @@ store-bd
 {  
    {  
       id_company: String,  
-      stores: [{
+      stores: [{  
          id_store: String,  
-         name: String   
-         address: String   
+         name: String  
+         address: String  
          latitude: Double,  
          longitude: Double,  
-         city: String,   
+         city: String,  
          country: String   
          time_open: Hour  
          time_close: Hour  
-         time_till_available: Date  
       }]  
    }  
 }  
  
 track-bd  
 {  
-   time: Date  
-   data: {  
-      name: string,  
-      address: string,  
-      address_two: string,  
-      description: string,  
-      country: string,  
-      city: string,  
-      state": string,  
-      zip_code: string,  
-      latitude: 0,  
-      longitude: 0  
-   }  
-   status: String  
-   response: {  
-      store_id: String  
-      store_name: String  
-      is_open: Boolean  
-      latitude: Double  
-      longitude: Double  
-      next_delivery_time: Date  
-   }  
+   time: Date,  
+    data: {  
+        name: String,  
+        address: String,  
+        address_two: String,  
+        description: String,  
+        country: String,  
+        city: String,  
+        state: String,  
+        zip_code: String,  
+        latitude: Number,  
+        longitude: Number  
+    },  
+    status: String,  
+    token: String,  
+    response: {  
+        store_id: String,  
+        store_name: String,  
+        is_open: Boolean,  
+        latitude: Number,  
+        longitude: Number,  
+        next_delivery_time: Date  
+    }  
 }  
 
 # Entrega estimada
 La entrega estimada es para el Lunes 26 de agosto de 2019 a las 11:55 pm
 
-# InstaStore
+## Endpoints
+|Name|Method|Route|Parameters|
+|--|--|--|--|
+|ClosestStore|GET|/closest/store|expectedDelivery: utcDate  
+                                 destination": {  
+                                 "name": "string",  
+                                 "address": "string",  
+                                 "address_two": "string",  
+                                 "description": "string",  
+                                 "country": "string",  
+                                 "city": "string",  
+                                 "state": "string",  
+                                 "zip_code": "string",  
+                                 "latitude": 0,  
+                                 "longitude": 0  
+                                 }, 
+                                 autorization token|
+
+Example Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb21wYW55IjoiU29yaWFuYSJ9.4HYqpFI2V5N1teEncL1wlE1XKyr1RZoSWlrqP58nijI  
+## Improvements and trade offs
+1. What would you improve from your code? why?
+   The way I handle errors because I am not handling all possible errors. Also, I would implement a way to test the app easier because right now I think there could be bugs hidden somewhere
+2. Which trade offs would you make to accomplish this on time? What'd you do next time to deliver more and sacrifice less?
+   I would use driven-test-development so I can write code for test cases but priorizing this I can assure the quality of the product.
+3. Do you think your service is secure? why?
+   I think it is in part, although im not using environment variables for the part of verifying if the token sent by the client is valid or not, I will only allow certain clients to have access to the server. 
+   The other thing is that DB is not secured, so anyone with acces to DB will be able to see the data.
+4. What would you do to measure the behaviour of your product on a production environment?
+   With the track I have, I would meassure how many request is receiving in certain time and the response time is taking each response, and based on that I would have a measure.
+
+## Decisions.
+I decided that the closest store is the one that is able to delivery as soon as possible the delivery, even if it is currently closed. For that, I took into account the time until opens.
+I only worked with stores from Moterrey City.
+
+## Blockers.
+I had a a little problems using the API of google to request the information of stores, since it allows few requests..
+
