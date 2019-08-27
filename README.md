@@ -76,39 +76,39 @@ La entrega estimada es para el Lunes 26 de agosto de 2019 a las 11:55 pm
 ## Endpoints
 |Name|Method|Route|Parameters|
 |--|--|--|--|
-|ClosestStore|GET|/closest/store|{
-                                 expectedDelivery: utcDate  
-                                 destination": {  
-                                 "name": "string",  
-                                 "address": "string",  
-                                 "address_two": "string",  
-                                 "description": "string",  
-                                 "country": "string",  
-                                 "city": "string",  
-                                 "state": "string",  
-                                 "zip_code": "string",  
-                                 "latitude": 0,  
-                                 "longitude": 0  
-                                 }, 
-                                 autorization token|
-
+|ClosestStore|GET|/closest/store|autorization token, JSON|
+body JSON:
+{
+   expectedDelivery: utcDate  
+   destination": {  
+   "name": "string",  
+   "address": "string",  
+   "address_two": "string",  
+   "description": "string",  
+   "country": "string",  
+   "city": "string",  
+   "state": "string",  
+   "zip_code": "string",  
+   "latitude": 0,  
+   "longitude": 0  
+}, 
 Example Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb21wYW55IjoiU29yaWFuYSJ9.4HYqpFI2V5N1teEncL1wlE1XKyr1RZoSWlrqP58nijI  
 Example Json:
-{
-	"expected_delivery": "{{current_timestamp}}",
-	"destination": {
-		"name": "Osman David Jimenez Gutierrez",
-	    "address": "Cra 96 D bis 22 h 12",
-	    "address_two": "apto 114",
-	    "description": "rapido por favor",
-	    "country": "Mexico",
-	    "city": "Monterrey",
-	    "state": "Colorado",
-	    "zip_code": 107472,
-	    "latitude":  25.686506, 
-		"longitude": -100.318328
-	}
-}
+{  
+	"expected_delivery": "{{current_timestamp}}",  
+	"destination": {  
+		"name": "Osman David Jimenez Gutierrez",  
+	    "address": "Cra 96 D bis 22 h 12",  
+	    "address_two": "apto 114",  
+	    "description": "rapido por favor",  
+	    "country": "Mexico",  
+	    "city": "Monterrey",  
+	    "state": "Colorado",  
+	    "zip_code": 107472,  
+	    "latitude":  25.686506,  
+		"longitude": -100.318328  
+	}  
+}  
 ## Improvements and trade offs
 1. What would you improve from your code? why?
    The way I handle errors because I am not handling all possible errors. Also, I would implement a way to test the app easier because right now I think there could be bugs hidden somewhere
