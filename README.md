@@ -28,15 +28,14 @@
 store-bd  
 {  
    {  
-      id_company: Integer,  
-      stores: [{  
-         id_store: Integer,  
+      id_company: String,  
+      stores: [{
+         id_store: String,  
          name: String   
          address: String   
          latitude: Double,  
          longitude: Double,  
          city: String,   
-         state: String,   
          country: String   
          time_open: Hour  
          time_close: Hour  

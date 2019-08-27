@@ -1,0 +1,467 @@
+{
+      {
+        "formatted_address": "Av. Eugenio Garza Sada Sur 699, Contry, 64860 Monterrey, N.L., Mexico",
+        "latitude": 25.6390802,
+        "longitude": -100.2826874
+         "id_store": "7fdc6d763c07efe667d7c6dc7a1c5c4761ee9df4",
+         "name": "Soriana Híper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "001, Carr Nacional 500B, Sin Nombre de Col 50, 64984 Monterrey, N.L., Mexico",
+        "latitude": 25.5761772,
+        "longitude": -100.2484462
+         "id_store": "29edc2f05bd43c3536a792ee1f0b43dcc7d2056f",
+         "name": "Soriana Plaza Serena",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Abraham Lincoln s/n, Mitras Nte., 64320 Monterrey, N.L., Mexico",
+        "latitude": 25.7148938,
+        "longitude": -100.3483878
+         "id_store": "3561de0eca28427eae8c157a2824c13211b16674",
+         "name": "Soriana Híper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Los Angeles 1732, Sin Nombre de Col 21, 64510 Monterrey, N.L., Mexico",
+        "latitude": 25.7074453,
+        "longitude": -100.2852656
+         "id_store": "74506cad26a8ab3a3adcbe1e16d76c5ad8fc77fa",
+         "name": "Soriana Híper - Felix U Gomez",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Félix U. Gómez 4100, Sin Nombre de Col 21, 64510 Monterrey, N.L., Mexico",
+        "latitude": 25.707073,
+        "longitude": -100.2842764
+         "id_store": "56c74dd37d11b5a953f3b498d73b12f9379ce043",
+         "name": "Soriana Felix",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Abraham Lincoln 4001, 64461 Monterrey, N.L., Mexico",
+        "latitude": 25.7629077,
+        "longitude": -100.410068
+        "id_store": "43e6ad285415a5fc2afcab2db065a62e0a49cadd",
+        "name": "Soriana Híper Patio Lincoln",
+        "time_open": 420,
+        "time_close": 1320
+      },
+      {
+        "formatted_address": "Blvd. Rogelio Cantú Gómez 900, Colinas de San Jerónimo, 64630 Monterrey, N.L., Mexico",
+        "latitude": 25.6942145,
+        "longitude": -100.3794982
+        "id_store": "a2867094b7df069550db7c66ceb1ff1f766d2106",
+        "name": "Soriana Híper San Jeronimo",
+        "time_open": 420,
+        "time_close": 1320
+      },
+      {
+        "formatted_address": "Carr Nacional 7877, La Estanzuela, 64988 Monterrey, N.L., Mexico",
+        "latitude": 25.5865172,
+        "longitude": -100.2565722
+         "id_store": "0b0cfcdb3e5c58af256bc6c3d07507d834ec247c",
+         "name": "Soriana Híper Estanzuela",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Paseo de los Descubridores S/N, Campanario Cumbres, 64610 Monterrey, N.L., Mexico",
+        "latitude": 25.7204639,
+        "longitude": -100.3816563
+        "id_store": "5172774f7da4fedde66340dfa7977658f23e15b9",
+        "name": "Soriana Súper",
+        "time_open": 420,
+        "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Eugenio Garza Sada 699, Residencial La Florida, 64000 Monterrey, N.L., Mexico",
+        "latitude": 25.6605384,
+        "longitude": -100.2963741
+        "id_store": "9b5912eb214434665228c59cebbef17b8d046592",
+        "name": "Soriana Híper - Garza Sada",
+        "time_open": 420,
+        "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Insurgentes 1600, San Jeronimo, 64630 Monterrey, N.L., Mexico",
+        "latitude": 25.6803188,
+        "longitude": -100.3648754
+        "id_store": "ecac47eee46d06ae50aaad740b33e4ea4a2fd7c9",
+        "name": "Soriana Súper - Insurgentes",
+        "time_open": 420,
+        "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Cristóbal Colón 790, Industrial, 64000 Monterrey, N.L., Mexico",
+        "latitude": 25.6877077,
+        "longitude": -100.3248233
+         "id_store": "de7bb8033763451d598bc6b899174900cd8ba48e",
+         "name": "Soriana Híper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Calle Alejandro de Rodas 3102, Cerradas de Cumbres, 64610 Monterrey, N.L., Mexico",
+        "latitude": 25.7275553,
+        "longitude": -100.3889231
+         "id_store": "8953cf45f4d04f267238e695e8d75c939cf4b805",
+         "name": "Soriana Hipermart",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Calle Av. Aztlán 200, Nueva Galicia, 64160 Monterrey, N.L., Mexico",
+        "latitude": 25.7321104,
+        "longitude": -100.3477148
+         "id_store": "1d620970bbcd0ca5d2bd19fda719622749a65dcb",
+         "name": "Soriana Mercado - Aztlan",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Ruiz Cortines 2401, Bernardo Reyes, 64190 Monterrey, N.L., Mexico",
+        "latitude": 25.7058174,
+        "longitude": -100.3385432
+         "id_store": "5779dee6ebbf213430eb8355826d3aa2b912ec3a",
+         "name": "Soriana Híper - Mitras",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Francisco I. Madero 1515, Centro, 64020 Monterrey, N.L., Mexico",
+        "latitude": 25.6829467,
+        "longitude": -100.2996003
+         "id_store": "0a834a8b359c868ced8158c0f21cf2587c99edd1",
+         "name": "Soriana Super Fundidora",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Simón Bolívar 1750, Mitras Centro, 64460 Monterrey, N.L., Mexico",
+        "latitude": 25.6971495,
+        "longitude": -100.3438913
+         "id_store": "57cc575108cc05ab68584243877513b0670ef04f",
+         "name": "Soriana Súper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Abraham Lincoln 5000, Villa Mitras, 64150 Monterrey, N.L., Mexico",
+        "latitude": 25.7266974,
+        "longitude": -100.364998
+         "id_store": "e1eae8204a663469052d464083dc9e102472f8e6",
+         "name": "Soriana Híper - Santa Cecilia",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Calle Dr. Enrique C. Livas 801, Vista Hermosa, 64620 Monterrey, N.L., Mexico",
+        "latitude": 25.6919118,
+        "longitude": -100.3553093
+         "id_store": "2f30ebcebf90e705febe98e0d16e56f2785787c4",
+         "name": "Soriana Súper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Avenida la Esperanza s/n, Ampliación Municipal, 64218 Monterrey, N.L., Mexico",
+        "latitude": 25.7589198,
+        "longitude": -100.3542219
+         "id_store": "02d740558225dc0797897e384576dbb4d8701799",
+         "name": "Soriana",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Lázaro Cárdenas 2801, Sin Nombre de Col 39, 64764 Monterrey, N.L., Mexico",
+        "latitude": 25.6291435,
+        "longitude": -100.2956111
+         "id_store": "9bf86b10db66d357753b24eed28e45adbdf343cf",
+         "name": "Soriana Híper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Fidel Velázquez 1513, Central, 64190 Monterrey, N.L., Mexico",
+        "latitude": 25.7178671,
+        "longitude": -100.3402977
+         "id_store": "5f160ccffa06d28b0f6deee9f874aae1239ef71c",
+         "name": "Soriana Fidel Velazquez",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Luis Donaldo Colosio Murrieta 1900, Barrio San Luis, 66050 Monterrey, N.L., Mexico",
+        "latitude": 25.778131,
+        "longitude": -100.388259
+         "id_store": "f8bb9169228de1923624d1c7127f9224a58c6e8d",
+         "name": "Soriana Híper - Solidaridad",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Calle Alejandro de Rodas 3102, CUMBRES SECTOR 8, 64610 Monterrey, N.L., Mexico",
+        "latitude": 25.7273976,
+        "longitude": -100.3898589
+         "id_store": "e6f1c49bd1ed0a563cbe46d9b33e34d57efe7cf2",
+         "name": "Soriana Híper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Bartolomé Mitre 6600, Libertadores de América, 64210 Monterrey, N.L., Mexico",
+        "latitude": 25.7587372,
+        "longitude": -100.3539389
+         "id_store": "8c3f2962b80db505ba0c115aae8d4a6bfadd3a49",
+         "name": "Soriana Híper - Topo Chico",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Calle Paseo de Los Triunfadores 3200-S HOME DEPOT, Cumbres 6o. Sector Secc a, 64619 Monterrey, N.L., Mexico",
+        "latitude": 25.7262087,
+        "longitude": -100.3905991
+         "id_store": "7e79254d7f23e628796180c06c9848152e72039b",
+         "name": "Soriana Cumbres",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Avenida Humberto Lobo 520, Del Valle, 66200 San Pedro Garza García, N.L., Mexico",
+        "latitude": 25.66408,
+        "longitude": -100.3838744
+         "id_store": "e2854734d96b858f58db5195b6377742c087384e",
+         "name": "Soriana Híper San Pedro",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Real San Agustin 314, Zona San Agustín, 66260 San Pedro Garza García, N.L., Mexico",
+        "latitude": 25.6499589,
+        "longitude": -100.3388788
+         "id_store": "0f8b2081575c544ac0c366468ba765b1b31ed798",
+         "name": "Soriana Híper San Agustin",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Antiguos Ejidatarios 709, La Alianza, 64100 Monterrey, N.L., Mexico",
+        "latitude": 25.779344,
+        "longitude": -100.4086634
+         "id_store": "df40f62341ab0f10f5bbe6f3ccac530d52ece02e",
+         "name": "Mercado Soriana Alianza",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Cristóbal Colón 790, Centro, 64000 Monterrey, N.L., Mexico",
+        "latitude": 25.6861645,
+        "longitude": -100.3194089
+         "id_store": "e2a5e012ca6dd3b993cdba65d7dcfd73d649bb7d",
+         "name": "Soriana Express - Colon Mty",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Calle Alejandro de Rodas 3102A, Sin Nombre de Col 58, 64610 Monterrey, N.L., Mexico",
+        "latitude": 25.7272933,
+        "longitude": -100.3898496
+         "id_store": "93014083cccc7934858dda714af39f825bb56704",
+         "name": "Soriana Cumbres",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Alfonso Reyes, Bernardo Reyes, 64280 Monterrey, N.L., Mexico",
+        "latitude": 25.70567,
+        "longitude": -100.3387811
+         "id_store": "6b35c676b7a343d31c6421cfd464c133bdb340ac",
+         "name": "SORIANA MITRAS",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Alfonso Reyes 601, El Roble, 66450 San Nicolás de los Garza, N.L., Mexico",
+        "latitude": 25.7455577,
+        "longitude": -100.3021856
+         "id_store": "9d75fdeb067de639fb468285483787622defd84d",
+         "name": "Soriana San Nicolas",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Benito Juárez 601, La Huerta, 67140 Monterrey, N.L., Mexico",
+        "latitude": 25.680293,
+        "longitude": -100.2519374
+         "id_store": "2c643db165d0a608d6bc0a3b3ec54675d42fa6f0",
+         "name": "Soriana Híper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Chopos 110, Santa Engracia, 66267 Monterrey, Santa Engracia, 66267 Monterrey, N.L., Mexico",
+        "latitude": 25.6499188,
+        "longitude": -100.3388257
+         "id_store": "fc2bfe3a30548114fc1af023ac05dd95d8700f61",
+         "name": "Soriana San Agustin",
+      {
+        "formatted_address": "Calle Alejandro de Rodas 3102-A, Sin Nombre de Col 58, 64619 Monterrey, N.L., Mexico",
+        "latitude": 25.727201,
+        "longitude": -100.3897784
+         "id_store": "d94a853e53a7a21c881f091cb35392ff5e56bef9",
+         "name": "Mercado Soriana",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Anillo Periferico, Sin Nombre de Col 72, Monterrey, N.L., Mexico",
+        "latitude": 25.6957342,
+        "longitude": -100.3798594
+        "id_store": "ed870775c2e29265a9f19f343bda1f5388596463",
+        "name": "Soriana Híper",
+        "time_open": 420,
+        "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Adolfo Ruiz Cortines Pte 600, Sin Nombre de Col 45, 67120 Guadalupe, N.L., Mexico",
+        "latitude": 25.701452,
+        "longitude": -100.2387046
+         "id_store": "ca52d941688ecc0686555c18f983fc516598c0e8",
+         "name": "Soriana Linda Vista",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Humberto Lobo y, Río Guadalquivir 520, Del Valle, 66200 San Pedro Garza García, N.L., Mexico",
+        "latitude": 25.6555706,
+        "longitude": -100.3844045
+         "id_store": "a23a40107ef53ae7e3d2a7311decf3a2a2e9cd78",
+         "name": "Soriana Súper Marne",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Paseo de los Descubridores 310, Campanario Cumbres, 64610 Monterrey, N.L., Mexico",
+        "latitude": 25.7204288,
+        "longitude": -100.3816797
+         "id_store": "b2ae292e237bedc0660126adefeaef1b3faaa47c",
+         "name": "366 Soriana discoverers",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "S. Andrés 111, Villas de Santo Domingo, 66437 Monterrey, N.L., Mexico",
+        "latitude": 25.750154,
+        "longitude": -100.2569124
+         "id_store": "0790dd1803905bd924f354e6c515591d2dda45fe",
+         "name": "Soriana Santo Domingo",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Manuel L. Barragan S-N, Anáhuac, 66450 San Nicolás de los Garza, N.L., Mexico",
+        "latitude": 25.744264,
+        "longitude": -100.3130396
+         "id_store": "6b6ebb350e74d4a2642f0e1a667db5d747fe83e3",
+         "name": "Soriana Súper",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Camino a La Banda 201, Cordillera, 66196 Santa Catarina, N.L., Mexico",
+        "latitude": 25.658354,
+        "longitude": -100.4414712
+         "id_store": "039f80cd6a88bdc33310f42b340a5d0f5dfa5c49",
+         "name": "Soriana Súper Valle Poniente",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Parque Industrial, Mirasur, Parque Industrial Escobedo, 66050 Cd Gral Escobedo, N.L., Mexico",
+        "latitude": 25.8038197,
+        "longitude": -100.3425909
+         "id_store": "e18ce33fe390b784b9920dafe6c3fab6be385c9d",
+         "name": "Soriana Hiper - Industrial Park",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Sendero Divisorio s/n, Joyas de Anahuac, 66428 Cd Gral Escobedo, N.L., Mexico",
+        "latitude": 25.7688938,
+        "longitude": -100.3020507
+         "id_store": "18e32cd58c8ba4e20c11d73b4b050b4ea54aaf14",
+         "name": "Soriana Híper - Sendero Escobedo",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Abraham Lincoln 5000, Valle de Santa Cecilia, 64150 Monterrey, N.L., Mexico",
+        "latitude": 25.7261142,
+        "longitude": -100.3659264
+         "id_store": "81c1c9a7398208521851571124d6f2681b912c2d",
+         "name": "Soriana Tienda 273 Santa Cecilia",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av. Félix Galván Ote. 400, Sin Nombre de Col 21, 67164 San Nicolás de los Garza, N.L., Mexico",
+        "latitude": 25.7074166,
+        "longitude": -100.2852454
+         "id_store": "3ce3dece184635c89a73debe01174f3c05552ecc",
+         "name": "Soriana Hiper Felix U. Gómez",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Industrial, 64440 Monterrey, Nuevo Leon, Mexico",
+        "latitude": 25.6869991,
+        "longitude": -100.3236015
+         "id_store": "1b766971c9f725f55c81536483cd8dcd49e7630d",
+         "name": "Soriana Hiper Industrial",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Sendero Poniente, Misión Lincoln, Cd Gral Escobedo, N.L., Mexico",
+        "latitude": 25.7641203,
+        "longitude": -100.4113586
+         "id_store": "a568202419bb03a4d4ed9e600bc605c13eaeb7a0",
+         "name": "Soriana Sendero Lincoln",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Calle Alejandro de Rodas 3102-A, Colonial Cumbres, 64610 Monterrey, Nuevo León, Mexico",
+        "latitude": 25.72695,
+        "longitude": -100.3892842
+         "id_store": "730735d071df09f28268cef6b6b7302f986ac637",
+         "name": "Soriana Corporativo",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Av Juan Pablo II 180, Sin Nombre de Col 2, Arboledas de San Jorge, 66465 San Nicolás de los Garza, N.L., Mexico",
+        "latitude": 25.7362305,
+        "longitude": -100.2884628
+         "id_store": "76c5d813aba86bb367e23d622cac51de6a4d3f6e",
+         "name": "Soriana Citadina",
+         "time_open": 420,
+         "time_close": 1320
+      },
+      {
+        "formatted_address": "Carretera Monterrey Reynosa, 29 de Julio 101, 67190 Guadalupe, N.L., Mexico",
+        "latitude": 25.6629414,
+        "longitude": -100.151667
+        "id_store": "c0875397b4357524a1e51aee39f4a379f5d6eb0c",
+        "name": "Soriana Santa Cruz",
+        "time_open": 420,
+        "time_close": 1320
+      }
+}
