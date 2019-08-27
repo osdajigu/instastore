@@ -1,6 +1,9 @@
 # Preguntas/Respuestas
 
-1. ¿Que información recibe el endpoint? (un grupo de coordenadas donde los tenderos estan, o solo información de un unico tendero, que empresa es, etc)? Recibe info de donde el cliente espera recibir el pedido, los datos de entrada son expectedDelivery: utcDate , representa la hora estimada de entrega de un pedido, 
+1. ¿Que información recibe el endpoint? (un grupo de coordenadas donde los tenderos estan, o solo información de un unico tendero, que empresa es, etc)? Recibe info de donde el cliente espera recibir el pedido, los datos de entrada son expectedDelivery:
+```json
+{
+utcDate , representa la hora estimada de entrega de un pedido, 
  destination": {  
 "name": "string",  
 "address": "string",  
@@ -13,6 +16,7 @@
 "latitude": 0,  
 "longitude": 0  
 }
+```
 2. ¿El endpoint debe trabajar para diferentes empresas, o se hara solo para 1 empresa en especifico?, en caso de ser diferentes, como se puede identificar que empresa es (esta pregunta es un complemento de la pregunta numero 1). Seria para varias , propon una solución 
 3. ¿Como se define la tienda mas cercana? (Distancia, tiempo en llegar, etc) quiero dejartelo abierto para que propongas la mejor manera de acuerdo a las restricciones de tiempo que tienes y la informacion que captas en el endpoint.
 4. ¿De donde se obtiene la informacion de las tiendas que existen actualmente? ¿Deben ser inventadas por uno mismo o se debe usar informacion de alguna tienda en especifico, o google maps, etc? Arma la estructura que quieras puedes tomar como base las tiendas de Soriana en Monterrey y Ciudad de Mexico
@@ -25,6 +29,7 @@
 11. El Endpoint debe validar autorización de utilización? no, pero si lo puedes hacer seria genial
 
 # Estructura de la base de datos:
+```json
 store-bd  
 {  
    {  
@@ -42,7 +47,8 @@ store-bd
       }]  
    }  
 }  
- 
+```
+```json
 track-bd  
 {  
    time: Date,  
@@ -69,15 +75,17 @@ track-bd
         next_delivery_time: Date  
     }  
 }  
+```
 
 # Entrega estimada
 La entrega estimada es para el Lunes 26 de agosto de 2019 a las 11:55 pm
-
 ## Endpoints
 |Name|Method|Route|Parameters|
 |--|--|--|--|
 |ClosestStore|GET|/closest/store|autorization token, JSON|
+
 body JSON:
+```json
 {
    expectedDelivery: utcDate  
    destination": {  
@@ -92,8 +100,10 @@ body JSON:
    "latitude": 0,  
    "longitude": 0  
 }, 
+```
 Example Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF9jb21wYW55IjoiU29yaWFuYSJ9.4HYqpFI2V5N1teEncL1wlE1XKyr1RZoSWlrqP58nijI  
 Example Json:
+```json
 {  
 	"expected_delivery": "{{current_timestamp}}",  
 	"destination": {  
@@ -109,6 +119,7 @@ Example Json:
 		"longitude": -100.318328  
 	}  
 }  
+```
 ## Improvements and trade offs
 1. What would you improve from your code? why?
    The way I handle errors because I am not handling all possible errors. Also, I would implement a way to test the app easier because right now I think there could be bugs hidden somewhere
