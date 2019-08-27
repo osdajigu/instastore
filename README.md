@@ -1,20 +1,20 @@
 # Preguntas/Respuestas
 
-1. ¿Que información recibe el endpoint? (un grupo de coordenadas donde los tenderos estan, o solo información de un unico tendero, que empresa es, etc)? Recibe info de donde el cliente espera recibir el pedido, los datos de entrada son expectedDelivery:
+1. ¿Que información recibe el endpoint? (un grupo de coordenadas donde los tenderos estan, o solo información de un unico tendero, que empresa es, etc)? Recibe info de donde el cliente espera recibir el pedido, los datos de entrada son 
 ```json
 {
-utcDate , representa la hora estimada de entrega de un pedido, 
- destination": {  
-"name": "string",  
-"address": "string",  
-"address_two": "string",  
-"description": "string",  
-"country": "string",  
-"city": "string",  
-"state": "string",  
-"zip_code": "string",  
-"latitude": 0,  
-"longitude": 0  
+   "expectedDelivery":"utcDate",
+   "destination": {  
+   "name": "string",  
+   "address": "string",  
+   "address_two": "string",  
+   "description": "string",  
+   "country": "string",  
+   "city": "string",  
+   "state": "string",  
+   "zip_code": "string",  
+   "latitude": 0,  
+   "longitude": 0  
 }
 ```
 2. ¿El endpoint debe trabajar para diferentes empresas, o se hara solo para 1 empresa en especifico?, en caso de ser diferentes, como se puede identificar que empresa es (esta pregunta es un complemento de la pregunta numero 1). Seria para varias , propon una solución 
@@ -32,47 +32,45 @@ utcDate , representa la hora estimada de entrega de un pedido,
 ```json
 store-bd  
 {  
-   {  
-      id_company: String,  
-      stores: [{  
-         id_store: String,  
-         name: String  
-         address: String  
-         latitude: Double,  
-         longitude: Double,  
-         city: String,  
-         country: String   
-         time_open: Hour  
-         time_close: Hour  
-      }]  
-   }  
+   "id_company": "String",  
+   "stores": [{ 
+      "id_store": "String",  
+      "name": "String",
+      "address": "String",
+      "latitude": "Double",  
+      "longitude": "Double",  
+      "city": "String",  
+      "country": "String",   
+      "time_open": "Hour",
+      "time_close": "Hour"
+   }]  
 }  
 ```
 ```json
 track-bd  
 {  
-   time: Date,  
-    data: {  
-        name: String,  
-        address: String,  
-        address_two: String,  
-        description: String,  
-        country: String,  
-        city: String,  
-        state: String,  
-        zip_code: String,  
-        latitude: Number,  
-        longitude: Number  
+   "time": "Date",  
+   "data": {  
+        "name": "String",  
+        "address": "String",  
+        "address_two": "String",  
+        "description": "String",  
+        "country": "String",  
+        "city": "String",  
+        "state": "String",  
+        "zip_code": "String",  
+        "latitude": "Number",  
+        "longitude": "Number"  
     },  
-    status: String,  
-    token: String,  
-    response: {  
-        store_id: String,  
-        store_name: String,  
-        is_open: Boolean,  
-        latitude: Number,  
-        longitude: Number,  
-        next_delivery_time: Date  
+    "status": "String",  
+    "token": "String",  
+    "response": {  
+        "store_id": "String",  
+        "store_name": "String",  
+        "is_open": "Boolean",  
+        "latitude": "Number",  
+        "longitude": "Number",  
+        "next_delivery_time": "Date"  
     }  
 }  
 ```
@@ -87,8 +85,8 @@ La entrega estimada es para el Lunes 26 de agosto de 2019 a las 11:55 pm
 body JSON:
 ```json
 {
-   expectedDelivery: utcDate  
-   destination": {  
+   "expectedDelivery": "utcDate",
+   "destination": {  
    "name": "string",  
    "address": "string",  
    "address_two": "string",  
