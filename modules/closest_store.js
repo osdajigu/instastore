@@ -6,7 +6,7 @@ const storedb = app.storedb;
 const storeModel = database.storeModel;
 
 const EARTH_RADIUS = 6378.137; ///in km
-const MAX_VELOCITY = 50; 
+const MAX_VELOCITY = 50;
 
 const trackModel = track.trackModel;
 
