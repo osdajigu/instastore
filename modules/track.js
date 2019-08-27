@@ -18,6 +18,7 @@ var trackSchema = new mongoose.Schema({
         longitude: Number
     },
     status: String,
+    token: String,
     response: {  
         store_id: String,
         store_name: String,  
@@ -30,12 +31,22 @@ var trackSchema = new mongoose.Schema({
 
 var Track = trackdb.model('Track', trackSchema);
 
-module.exports = function(req, res, next) {
+module.exports.trackModel = Track;
+module.exports.trackData = function(req, res, next) {
     let track = new Track({
         time: new Date(),
         data: req.body,
         status: "None yet",
+        token: req.headers['authorization'],
+        response: null,
     })
-    track.save();
-    next();
+    track.save((err, data) => {
+        if(err) {
+            res.status(500).send({ error: "Hubo un error guardando en la base de datos"});
+            res.end();
+        } else {
+            req.track_id = data._id;
+            next();
+        }
+    });
 }

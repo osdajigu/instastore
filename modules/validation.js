@@ -1,9 +1,11 @@
 const express = require('express');
 const Joi = require('joi');
+const track = require('./track.js');
+
+const trackModel = track.trackModel;
 
 var validator = express.Router();
 validator.get('/closest/store', function (req, res, next) { 
-    console.log(req.body);
     const schema = {
         expected_delivery: Joi.date(),
 	    destination: Joi.object().keys({
@@ -21,10 +23,11 @@ validator.get('/closest/store', function (req, res, next) {
     }
     const result = Joi.validate(req.body, schema);
     if(result.error) {
-        res.status(400).send({error: result.error.details[0].message})
-        res.end()
+        res.status(400).send({error: result.error.details[0].message});
+        res.end();
+        trackModel.findByIdAndUpdate(req.track_id, {status: "404"});
     } else {
-        next(); 
+        next();
     }
 });
 

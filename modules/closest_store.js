@@ -1,13 +1,14 @@
 const app = require('../app.js');
 const database = require('./fill_database.js');
+const track = require('./track.js');
 
 const storedb = app.storedb;
 const storeModel = database.storeModel;
 
-const NAME = "Soriana";
-
 const EARTH_RADIUS = 6378.137; ///in km
 const MAX_VELOCITY = 50; 
+
+const trackModel = track.trackModel;
 
 function degrees_to_radians(degrees) {
   var pi = Math.PI;
@@ -30,7 +31,7 @@ function timeToOpen(store) {
     if(cur_time >= store.time_open && cur_time <= store.time_close) {
         return 0;
     } else {
-        return time_open + (24*60 - cur_time);
+        return store.time_open + (24*60 - cur_time);
     }
 }
 
@@ -75,25 +76,28 @@ function findClosest(stores, deliveryData) {
 }
 
 module.exports = function(req, res) {
+    const NAME = req.id_company;
     storeModel.findOne({id_company: NAME}, (err, doc) => {
         if(err) {
             res.status(404);
             res.send("the id of the company provided doesnt exist");
+            trackModel.findByIdAndUpdate(req.track_id, {status: "404"});
         } else {
             res.status(200)
             var data = findClosest(doc.stores, req.body);
             var deliveryTime = new Date(Date.now())
             deliveryTime.setMinutes(deliveryTime.getMinutes() + data.time);
-            console.log(req.body.expected_delivery);
             var expectedDeliveryTime = new Date(req.body.expected_delivery);
-            res.json({
+            var response = {
                 store_id: data.store._id,
                 store_name: data.store.name,
                 is_open: isOpen(data.store),
                 latitude: data.store.latitude,
                 longitude: data.store.latitude,
                 next_delivery_time: deliveryTime.getTime() < expectedDeliveryTime.getTime() ? expectedDeliveryTime : deliveryTime,
-            })
+            }
+            res.json(response);
+            trackModel.findByIdAndUpdate(req.track_id, {response: response, status: "OK"});
         }
         res.end();
     });
